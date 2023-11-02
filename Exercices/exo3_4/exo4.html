@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo 3 et 4</title>
+</head>
+
+<body>
+    <h3>Créez le programme permettant d’ajouter ou retirer des articles dans un panier. Il faut pouvoir calculer le total des achats en temps réel</h3>
+    <div >
+        <h2><b>Descriptif produit</b></h2>
+        <table id="articles">
+            <tr>
+                <th>produit</th>
+                <th>prix unitaire</th>
+            </tr>
+            <tr>
+                <td>Chaise</td>
+                <td>25</td>
+                <td><button type="button" onclick="addProduit_et_prix('Chaise',25)">Ajouter</button></td>
+                <td><button type="button" onclick="delQuantity('Chaise',25)">Retirer</button></td>
+            </tr>
+            <tr>
+                <td>Table</td>
+                <td>150</td>
+                <td><button type="button" onclick="addProduit_et_prix('Table',150)">Ajouter</button></td>
+                <td><button type="button" onclick="delQuantity('Table',150)">Retirer</button></td>
+            </tr>
+            <tr>
+                <td>Meuble TV</td>
+                <td>250</td>
+                <td><button type="button" onclick="addProduit_et_prix('Meuble TV',250)">Ajouter</button></td>
+                <td><button type="button" onclick="delQuantity('Meuble TV',250)">Retirer</button></td>
+            </tr>
+        </table>
+    </div>
+    <div >
+        <h2><b>Mon panier</b></h2>
+        <table id="panier"></table>
+        <div id="myTotal"></div>
+    </div>
+    <br>
+    <script src="./exo4.js"></script>
+</body>
+
+</html>
