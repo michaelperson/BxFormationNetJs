@@ -1,0 +1,73 @@
+//document.write("<h1>Ceci est ajouté par le js</h1>");
+
+//récup du p via son id
+let moTitre = document.getElementById("ZeTitre");
+let sousTitre = document.getElementById("SousTitre");
+//Ajouter le texte
+moTitre.innerText="<h1>Mon bô titre</h1>";
+sousTitre.innerHTML="<h2>Mon bô sous titre</h2>";
+
+let lesPsansRien = document.getElementsByTagName("p");
+lesPsansRien.innerText="vide";
+lesPsansRien[2].innerHTML="<b>Je l'ai</b>vidé";
+let lesPAvecClass =  document.getElementsByClassName("chiffre");
+
+
+//Mode barbabre à EVITER!!!!
+let maZone = document.getElementById("ZoneDynamique");
+maZone.innerHTML='<img width="100px" src="data:image/jpeg;base64,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">';
+
+//Mode correct
+let maZone2 = document.getElementById("ZoneDynamique2");
+let monImage = document.createElement("img"); //nom de la balise 
+monImage.setAttribute("src","https://static.nationalgeographic.fr/files/styles/image_3200/public/comedy-wildlife-awards-squirel-stop.adapt_.1190.1.jpg?w=710&h=530");
+monImage.setAttribute("width", "100px");
+//De l'ajouter dans le dom
+maZone2.appendChild(monImage);
+
+function fnFamille()
+{
+     //Récupère lélément permettant de naviguer vers les autres
+     let moi = document.getElementById("millieu");
+
+     //je veux donner le nom de mon cadet
+     let cadet = moi.previousSibling;
+     cadet.innerHTML+=" <b>François</b>"
+
+     //Je veux récupérer mon ainée
+     let ainee = moi.nextElementSibling;
+     ainee.innerHTML+=" <b>Fred</b>"
+
+     //Je veux changer mon parent
+     let monParent= moi.parentNode;
+     let h3pere = document.createElement("h3");
+     h3pere.innerText="Luke , je suis ton père";
+     monParent.insertBefore(h3pere,cadet);
+
+     //Fin de la famille
+ 
+     monParent.insertAdjacentHTML("beforebegin", "-----C'est la Début !!----");
+     
+     monParent.insertAdjacentHTML("afterbegin", "-----ça vient de commencer !!----");
+     monParent.insertAdjacentHTML("beforeend", "-----Le générique final commence----");
+     monParent.insertAdjacentHTML("afterend", "-----C'est la FIN !!----");
+
+     //Changer mon frère cadet par une soeur
+     let maSoeur = document.createElement("p");
+     maSoeur.innerText="Odile (qui remplace mon cadet)";
+     monParent.insertBefore(maSoeur,cadet);
+     monParent.replaceChild(maSoeur,cadet);
+
+     //Faire disparaitre le dernier noeud
+     monParent.removeChild(monParent.lastChild);
+
+     //je vérifie si monparent a un attribut style
+     if(monParent.hasAttribute("style"))
+     {
+        monParent.removeAttribute("style");
+        monParent.setAttribute("class","Box");
+     }
+
+     //je remplace tout le div
+     monParent.outerHTML="<p class='BOX'>CACHE</p>"
+}
