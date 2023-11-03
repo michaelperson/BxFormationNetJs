@@ -37,15 +37,25 @@ document.getElementById("cp").addEventListener("change", function(e){
         e.target.focus();
         document.getElementById("errorCp").innerHTML="Le code postal est compris entre 1000 et 9000";
     } 
-    if(e.target.value<1000 || e.target.value>9999)
-     {
+    // if(e.target.value<1000 || e.target.value>9999)
+    //  {
+    //     e.target.value="";
+    //     e.target.focus();
+    //     document.getElementById("errorCp").innerHTML="Le code postal est compris entre 1000 et 9000";
+    //  }
+    //  else
+    //  {
+    //     document.getElementById("errorCp").innerHTML="";
+
+    //  }
+    const paragraph = e.target.value;
+    const regex = /[0-9]{4}/g;
+    const found = paragraph.match(regex);
+    if(found===null || found[0]!==e.target.value)
+    {
         e.target.value="";
         e.target.focus();
         document.getElementById("errorCp").innerHTML="Le code postal est compris entre 1000 et 9000";
-     }
-     else
-     {
-        document.getElementById("errorCp").innerHTML="";
-
-     }
+      
+    }
 });
