@@ -15,6 +15,7 @@ function horaire() {
 
     let divHoraire = document.getElementById("horaire");
     let stringHoraire = heure + " : " + minutes + " : " + secondes;
+    //document.title !!
     let title = document.head.getElementsByTagName("title")[0].innerHTML = stringHoraire;
 
     let day;

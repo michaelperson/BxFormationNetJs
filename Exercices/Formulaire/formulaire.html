@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my form</title>
+</head>
+<body>
+    <h3></h3>
+    <form name="nowIfoundIt" action="" method="get">
+        <!-- NBB attribute 'name' va in url -->
+        Nom: <input type="text" placeholder="Dupont" id="nom" name="nom">
+        <br>
+        Prenom: <input type="text" placeholder="Jean" id="prenom" name="prenom">
+        <br>
+        Code postal: <input type="number" name="code_postal" id="code_postal">
+        <!-- <input type="number" name="code_postal" id="code_postal" min="1000" max="9999"> -->
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <button id="monBoutonCompliteAuto" >Auto-complétion</button>
+    <button id="monBoutonResetAll" >Reset all</button>
+
+    <script src="./formulaire.js"></script>
+    
+</body>
+</html>
