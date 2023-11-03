@@ -4,8 +4,8 @@
     border: 10px solid #785623;
     border-radius: 15%;
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     float:left
 }
 
@@ -16,7 +16,7 @@
     
     border-radius: 60%;
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     float:left
 }

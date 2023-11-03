@@ -86,11 +86,23 @@
 //    }
   
 
-   function toto(element)
-   {
-    console.log(element.value);
-    element.parentElement.style="background-color:red";
-    element.value="Garcias";
-   }
+   // function toto(element)
+   // {
+   //  console.log(element.value);
+   //  element.parentElement.style="background-color:red";
+   //  element.value="Garcias";
+   // }
+
+
+   let info = [{ Nom:"Mike", Age:"25"},
+   { Nom:"Albert", Age:"15"},
+   { Nom:"Jess", Age:"18"},
+   { Nom:"Vanessa", Age:"45"},
+   { Nom:"steph", Age:"65"}];
+   // n°1 N°2
+
+   let nouveu =info.map((elementcourant)=> { return `${elementcourant.Nom}`});
+
+   console.log(info);   console.log(nouveu);
 
    

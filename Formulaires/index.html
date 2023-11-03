@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title> 
+</head>
+<body>
+    <form name="frmComplete">
+        <p>
+          <label for="search">search:</label>
+          <input id="search" name="search" type="search" />
+        </p>
+        <p>
+          <label for="text">text:</label>
+          <input id="text" name="text" type="text" />
+        </p>
+        <p>
+          <label for="date">date:</label>
+          <input id="date" name="date" type="datetime-local" />
+        </p>
+        <p>
+          <label for="radio">radio:</label>
+          <input id="radio" name="radio" type="radio" />
+        </p>
+        <p>
+          <label for="checkbox">checkbox:</label>
+          <input id="checkbox" name="checkbox" type="checkbox" />
+        </p>
+        <div class="select-wrapper">
+            <select id="select" name="select">
+              <option>Banane</option>
+              <option>Cerise</option>
+              <option>Citron</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Fruits préférés</legend>
+        
+            <p>
+              <label>
+                <input type="checkbox" name="fruit-1" value="cherry" />
+                J'aime les cerises
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="fruit-2" value="banana" disabled />
+                Je ne peux pas aimer les bananes
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="fruit-3" value="strawberry" />
+                J'aime les fraises
+              </label>
+            </p>
+          </fieldset>
+        <p><input type="submit" value="submit" /></p>
+        <p><input type="button" value="button" /></p>
+        
+        </form>
+    <hr>
+        <form name="frmTest">
+          test : <input type="number">
+          <button>Go</button>
+        </form>
+ <script src="./js/script.js"></script>
+      
+</body>
+</html>
