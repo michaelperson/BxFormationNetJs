@@ -65,7 +65,8 @@ function fnFamille()
      if(monParent.hasAttribute("style"))
      {
         monParent.removeAttribute("style");
-        monParent.setAttribute("class","Box");
+       // monParent.setAttribute("class","Box");
+       monParent.classList.add("Box");
      }
 
      //je remplace tout le div

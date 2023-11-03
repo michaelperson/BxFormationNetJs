@@ -1,0 +1,22 @@
+.debut
+{
+    background-color: aqua;
+    border: 10px solid #785623;
+    border-radius: 15%;
+    display: block;
+    width: 400px;
+    height: 400px;
+    float:left
+}
+
+.fin
+{
+    background-color:#785623;
+    border: 10px solid  aqua;
+    
+    border-radius: 60%;
+    display: block;
+    width: 400px;
+    height: 400px;
+    float:left
+}
