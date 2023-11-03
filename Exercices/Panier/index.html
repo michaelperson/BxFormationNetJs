@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Panier</title>
+<link rel="stylesheet" href="./css/style.css" type="text/css"/>
+</head>
+<body>
+  <h1>Descriptif Produit</h1>
+  <table>
+    <tbody>
+      <tr id="p01"><td>Chaise</td><td>25</td><td><button id="btnAddP01">Ajouter au panier</button><button id="btnRemove01"disabled>Retirer du panier</button></td></tr>
+      <tr id="p02"><td>Table</td><td>150</td><td><button id="btnAddP02">Ajouter au panier</button><button id="btnRemove02" disabled>Retirer du panier</button></td></tr>
+      <tr id="p03"><td>Meuble TV</td><td>250</td><td><button id="btnAddP03" >Ajouter au panier</button><button id="btnRemove03" disabled>Retirer du panier</button></td></tr>
+    </tbody>
+  </table>
+  <hr>
+  <h1>Mon panier</h1>
+  <table>
+    <tbody id="mon_panier">
+    </tbody>
+  </table>
+  Prix Total : <input id="prix_tot" value="0" text='type' disabled="disabled" />
+  <script type="text/javascript" src="./js/panier.js"></script>
+</body>
+</html>
